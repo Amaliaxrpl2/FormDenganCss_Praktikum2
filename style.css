@@ -1,0 +1,331 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 15px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =========================
+   BACKGROUND LOGIN
+========================= */
+
+body:has(.login-container) {
+    background-image: url("kdj.jpg");
+}
+
+/* =========================
+   BACKGROUND SIGN UP
+========================= */
+
+body:has(.signup-container) {
+    background-image: url("yjh.jpg");
+}
+
+/* =========================
+   BOX FORM
+========================= */
+
+.login-container,
+.signup-container,
+.registrasi-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* LOGIN - KREM SUNSET */
+
+.login-container {
+    background: rgba(255, 239, 216, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* SIGN UP - BIRU MALAM */
+
+.signup-container {
+    background: rgba(35, 47, 85, 0.70);
+    border: 1px solid rgba(230, 235, 255, 0.75);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* REGISTRASI - PUTIH */
+
+.registrasi-container {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.login-container h1 {
+    color: #684532;
+}
+
+.signup-container h1 {
+    color: #FFFFFF;
+}
+
+.registrasi-container h1 {
+    color: #333333;
+}
+
+.subtitle {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.login-container .subtitle {
+    color: #745D4C;
+}
+
+.signup-container .subtitle {
+    color: #E0E5FF;
+}
+
+.registrasi-container .subtitle {
+    color: #777777;
+}
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.login-container label {
+    color: #684532;
+}
+
+.signup-container label {
+    color: #FFFFFF;
+}
+
+.registrasi-container label {
+    color: #444444;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+
+    border: 1px solid #D8D8D8;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.88);
+    color: #333333;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.login-container input,
+.login-container select,
+.login-container textarea {
+    border-color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 250, 241, 0.65);
+}
+
+.signup-container input,
+.signup-container select,
+.signup-container textarea {
+    border-color: rgba(255, 255, 255, 0.75);
+    background: rgba(230, 235, 255, 0.28);
+    color: #FFFFFF;
+}
+
+.signup-container input::placeholder,
+.signup-container textarea::placeholder {
+    color: #E0E5F5;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #C9B3A0;
+    border-color: transparent;
+}
+
+.signup-container input:focus,
+.signup-container select:focus,
+.signup-container textarea:focus {
+    outline-color: #B8C6FF;
+}
+
+textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+/* =========================
+   TOMBOL
+========================= */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* Tombol Login - Sunset */
+
+.login-container button {
+    background: rgba(190, 111, 72, 0.92);
+}
+
+.login-container button:hover {
+    background: #A95E3E;
+}
+
+/* Tombol Sign Up - Midnight Blue */
+
+.signup-container button {
+    background: rgba(89, 108, 161, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.signup-container button:hover {
+    background: #46588F;
+}
+
+/* Tombol Registrasi - Ungu */
+
+.registrasi-container button {
+    background: #A58AC7;
+}
+
+.registrasi-container button:hover {
+    background: #8C70B1;
+}
+
+/* =========================
+   TEKS BAGIAN BAWAH
+========================= */
+
+.footer-text {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.login-container .footer-text {
+    color: #684532;
+}
+
+.signup-container .footer-text {
+    color: #FFFFFF;
+}
+
+.registrasi-container .footer-text {
+    color: #555555;
+}
+
+/* =========================
+   LINK
+========================= */
+
+a {
+    text-decoration: underline;
+}
+
+.login-container a {
+    color: #B65E37;
+}
+
+.signup-container a {
+    color: #D5DCFF;
+}
+
+.registrasi-container a {
+    color: #8C70B1;
+}
+
+/* =========================
+   INPUT BERJAJAR
+========================= */
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 400px) {
+    .login-container,
+    .signup-container,
+    .registrasi-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .form-row {
+        gap: 8px;
+    }
+}
